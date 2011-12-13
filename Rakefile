@@ -13,8 +13,8 @@ begin
     jewel.authors     = ["Tanel Suurhans", "Tarmo Lehtpuu"]
     jewel.files       = FileList["lib/mailgun-rails.rb", "MIT-LICENCE", "README.markdown"]
     jewel.add_dependency 'curb'
-    jewel.add_dependency 'active_support'
-    jewel.add_dependency 'action_mailer'
+    jewel.add_dependency 'activesupport'
+    jewel.add_dependency 'actionmailer'
   end
 rescue LoadError
   puts "Jeweler not available. Install it with: gem install jeweler"
