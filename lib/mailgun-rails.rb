@@ -37,6 +37,7 @@ module Mailgun
       end
 
       curl                     = Curl::Easy.new("https://api:#{self.api_key}@api.mailgun.net/v2/#{self.api_host}/messages.mime")
+      curl.ssl_verify_peer = false
       curl.multipart_form_post = true
       curl.http_post(*data)
 
